@@ -3,7 +3,8 @@ public class Logger {
     private static int count = 0;
     private Logger(){
         count++;
-        System.out.println("Logger class created "+ count);
+        System.out.println("Logger class created ");
+        System.out.println("Count = "+count);
     }
     public static Logger getInstance(){
         return obj;
