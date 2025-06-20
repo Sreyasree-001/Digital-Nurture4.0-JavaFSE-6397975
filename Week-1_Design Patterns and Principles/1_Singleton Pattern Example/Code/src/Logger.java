@@ -1,13 +1,19 @@
 public class Logger {
-    private static final Logger obj = new Logger();
-    private static int count = 0;
+    private static Logger obj = null;
+
     private Logger(){
-        count++;
         System.out.println("Logger class created ");
-        System.out.println("Count = "+count);
     }
+
+
     public static Logger getInstance(){
+        if(obj==null){
+            obj = new Logger();
+        }
         return obj;
     }
+
+    public void logDetails(String str){
+        System.out.println(str);
+    }
 }
-//Eager initialization

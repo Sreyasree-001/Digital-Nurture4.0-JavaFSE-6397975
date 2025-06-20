@@ -5,18 +5,28 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args){
-        Product[] products = {
-                new Product(1, "Laptop", "Electronics"),
-                new Product(2, "Shoes", "Footwear"),
-                new Product(3, "Book", "Education"),
-                new Product(4, "Mobile", "Electronics"),
-                new Product(5, "Watch", "Accessories")
-        };
         Scanner sc = new Scanner(System.in);
-        System.out.print("Enter name of the item: ");
+        System.out.print("Enter the number of products: ");
+        int n = sc.nextInt();
+        Product[] products = new Product[n];
+        for(int i=0;i<n;i++){
+            System.out.println("Enter product "+(i+1));
+            System.out.print("Enter id:");
+            long id = sc.nextLong();
+            System.out.print("Enter product name:");
+            sc.nextLine();
+            String name = sc.nextLine();
+            System.out.print("Enter product category:");
+            String category = sc.nextLine();
+            products[i] = new Product(id,name,category);
+        }
+
+        System.out.print("Enter name of the item to search: ");
         String productName = sc.nextLine();
 
         ProductController controller = new ProductController();
         controller.performSearch(products, productName);
+
+        sc.close();
     }
 }

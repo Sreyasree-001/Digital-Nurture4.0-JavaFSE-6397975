@@ -18,5 +18,7 @@ public class test {
         Document doc = factory.createDocument();
         doc.open();
 
+        sc.close();
+
     }
 }

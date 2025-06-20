@@ -1,11 +1,18 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args){
-        double initial = 10000;
-        double rate = 0.05;
-        int futureYears = 5;
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter initial amount: ");
+        double initial = sc.nextDouble();
+        System.out.print("Enter growth rate: ");
+        double rate = sc.nextDouble();
+        System.out.print("Enter years: ");
+        int futureYears = sc.nextInt();
 
         double result = FinancialPredictor.forecast(initial, rate, futureYears);
         System.out.printf("Forecasted value after %d years: %.2f\n", futureYears, result);
 
+        sc.close();
     }
 }
