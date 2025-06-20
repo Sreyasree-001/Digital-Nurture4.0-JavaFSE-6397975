@@ -2,7 +2,7 @@ public class Logger {
     private static Logger obj = null;
 
     private Logger(){
-        System.out.println("Logger class created ");
+        System.out.println("Logger instance created ");
     }
 
 
