@@ -1,8 +1,8 @@
-# Financial Forecasting Tool
-
+## Financial Forecasting Tool
 A simple financial forecasting tool made in Java that uses recursive algorithm to predict future values based on past growth rates.
 This project demonstrates how **recursion** can be applied to calculate projected financial values. 
 The recursive approach simplifies the logic of compound growth over a number of years.
+
 ---
 
 ## Concept of Recursion
@@ -36,13 +36,13 @@ It is used for:
   - S(n) = O(n)
 ---
 
-### Optimization Tips
+## Optimization Tips
 - 1. Use memoization to cache previously computed values.
   2. Use iterative methods for production-grade forecasting.
   3. Handle large numbers of years carefully to avoid stack overflow.
   
 ---
 
-### Conclusion
+## Conclusion
 - Suitable for small datasets or when modeling mathematical recurrences
 - Use iterative or memoized versions for large n to avoid stack overflow
