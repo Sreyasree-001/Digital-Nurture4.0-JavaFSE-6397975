@@ -18,8 +18,8 @@ This project demonstrates efficient product search in an e-commerce platform usi
 ## Big O Notation:
 
 **Big O notation**  is an asymptotic notation to describe the performance or complexity of an algorithm in terms of:
-    - 1. Time (how fast it runs)
-    - 2. Space (how much memory it uses)
+1. Time (how fast it runs),
+2. Space (how much memory it uses)
 - It expresses the upper bound of an algorithm according to the input size.
 - It is denoted as O(f(n)), where f(n) is a function that represents the number of operations that an algorithm performs to solve a problem of size n.
 - Example: Linear Search has a complexity of O(1) in best case, O(n) in worst case.
