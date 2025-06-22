@@ -18,31 +18,31 @@ This project demonstrates efficient product search in an e-commerce platform usi
 ## Big O Notation:
 
 **Big O notation**  is an asymptotic notation to describe the performance or complexity of an algorithm in terms of:
-          1. Time (how fast it runs)
-          2. Space (how much memory it uses)
-It expresses the upper bound of an algorithm according to the input size.
-It is denoted as O(f(n)), where f(n) is a function that represents the number of operations that an algorithm performs to solve a problem of size n.
-Example: Linear Search has a complexity of O(1) in best case, O(n) in worst case.
+          - 1. Time (how fast it runs)
+          - 2. Space (how much memory it uses)
+- It expresses the upper bound of an algorithm according to the input size.
+- It is denoted as O(f(n)), where f(n) is a function that represents the number of operations that an algorithm performs to solve a problem of size n.
+- Example: Linear Search has a complexity of O(1) in best case, O(n) in worst case.
 
-    | Notation | Meaning                        | Example Use Case          |
-    |----------|--------------------------------|---------------------------|
-    | O(1)     | Constant time                  | HashMap access            |
-    | O(log n) | Logarithmic time               | Binary Search             |
-    | O(n)     | Linear time                    | Linear Search             |
-    | O(n²)    | Quadratic time                 | Bubble Sort               |
+        | Notation | Meaning                        | Example Use Case          |
+        |----------|--------------------------------|---------------------------|
+        | O(1)     | Constant time                  | HashMap access            |
+        | O(log n) | Logarithmic time               | Binary Search             |
+        | O(n)     | Linear time                    | Linear Search             |
+        | O(n²)    | Quadratic time                 | Bubble Sort               |
 
 ---
 
 ## Search Operation Comparison
-Best case: The input provides the most favorable condition. In Linear Search the element is at the first index → O(1)
-Average case: The element is somewhere in the middle or appears randomly. In Linear Search the element is at a random index → O(n/2) = O(n)
-Worst case: The input causes the algorithm to do the most work. In Linear Search the element is at the last index or not present → O(n)
+- Best case: The input provides the most favorable condition. In Linear Search the element is at the first index → O(1)
+- Average case: The element is somewhere in the middle or appears randomly. In Linear Search the element is at a random index → O(n/2) = O(n)
+- Worst case: The input causes the algorithm to do the most work. In Linear Search the element is at the last index or not present → O(n)
 
 
-    | Algorithm         | Best Case            | Average Case  | Worst Case       | Time Complexity  |
-    |-------------------|----------------------|---------------|------------------|------------------|
-    | **Linear Search** | O(1) (1st match)     | O(n/2) → O(n) | O(n) (not found) | O(n)             |
-    | **Binary Search** | O(1) (middle match)  | O(log n)      | O(log n)         | O(log n)         |
+        | Algorithm         | Best Case            | Average Case  | Worst Case       | Time Complexity  |
+        |-------------------|----------------------|---------------|------------------|------------------|
+        | **Linear Search** | O(1) (1st match)     | O(n/2) → O(n) | O(n) (not found) | O(n)             |
+        | **Binary Search** | O(1) (middle match)  | O(log n)      | O(log n)         | O(log n)         |
 
 ---
 
