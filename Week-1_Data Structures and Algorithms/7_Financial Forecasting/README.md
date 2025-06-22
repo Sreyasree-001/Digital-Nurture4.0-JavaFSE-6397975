@@ -24,10 +24,10 @@ It is used for:
 ### Formula used
       FV = PV * (1 + r)^n
       Where:
-        - `FV` = Future Value  
-        - `PV` = Present Value (initial value)  
-        - `r` = Annual Growth Rate  
-        - `n` = Number of Years  
+      - FV = Future Value  
+      - PV = Present Value (initial value)  
+      - r = Annual Growth Rate  
+      - n = Number of Years  
 ---
 
 ## Analysis
@@ -38,12 +38,12 @@ It is used for:
 ---
 
 ## Optimization Tips
-- 1. Use memoization to cache previously computed values.
+  1. Use memoization to cache previously computed values.
   2. Use iterative methods for production-grade forecasting.
   3. Handle large numbers of years carefully to avoid stack overflow.
   
 ---
 
 ## Conclusion
-- Suitable for small datasets or when modeling mathematical recurrences
-- Use iterative or memoized versions for large n to avoid stack overflow
+- Recursion is suitable for small datasets or when modeling mathematical recurrences
+- We can use iterative or memoized versions for large n to avoid stack overflow
