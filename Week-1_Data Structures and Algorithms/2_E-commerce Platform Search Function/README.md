@@ -41,8 +41,8 @@ This project demonstrates efficient product search in an e-commerce platform usi
 
         | Algorithm         | Best Case            | Average Case  | Worst Case       | Time Complexity  |
         |-------------------|----------------------|---------------|------------------|------------------|
-        | **Linear Search** | O(1) (1st match)     | O(n/2) → O(n) | O(n) (not found) | O(n)             |
-        | **Binary Search** | O(1) (middle match)  | O(log n)      | O(log n)         | O(log n)         |
+        | Linear Search     | O(1) (1st match)     | O(n/2) → O(n) | O(n) (not found) | O(n)             |
+        | Binary Search     | O(1) (middle match)  | O(log n)      | O(log n)         | O(log n)         |
 
 ---
 
