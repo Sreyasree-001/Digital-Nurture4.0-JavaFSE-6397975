@@ -45,11 +45,11 @@ Time Complexity of the two different searching algorithms:
         | Binary Search     | O(1) (middle match)  | O(log n)      | O(log n)                   |
 
 For Binary search if we use Quick Sort:
-Quick Sort Time Complexity:
+- Quick Sort Time Complexity:
     - Best & Average Case: O(n log n)
     - Worst Case: O(n²) (e.g., already sorted array with poor pivot selection)
-Binary Search Time Complexity: O(log n)
-So, Total Time Complexity:
+- Binary Search Time Complexity: O(log n)
+- So, Total Time Complexity:
     - Best & Average: O(n log n)
     - Worst: O(n²)
 
