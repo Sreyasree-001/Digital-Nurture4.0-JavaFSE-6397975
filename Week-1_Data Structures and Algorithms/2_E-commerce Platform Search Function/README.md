@@ -37,12 +37,22 @@ This project demonstrates efficient product search in an e-commerce platform usi
 - Best case: The input provides the most favorable condition. In Linear Search the element is at the first index → O(1)
 - Average case: The element is somewhere in the middle or appears randomly. In Linear Search the element is at a random index → O(n/2) = O(n)
 - Worst case: The input causes the algorithm to do the most work. In Linear Search the element is at the last index or not present → O(n)
+Time Complexity of the two different searching algorithms:
 
+        | Algorithm         | Best Case            | Average Case  | Worst Case                 | 
+        |-------------------|----------------------|---------------|----------------------------|
+        | Linear Search     | O(1) (1st match)     | O(n/2) → O(n) | O(n) (not found/last item) | 
+        | Binary Search     | O(1) (middle match)  | O(log n)      | O(log n)                   |
 
-        | Algorithm         | Best Case            | Average Case  | Worst Case       | Time Complexity  |
-        |-------------------|----------------------|---------------|------------------|------------------|
-        | Linear Search     | O(1) (1st match)     | O(n/2) → O(n) | O(n) (not found) | O(n)             |
-        | Binary Search     | O(1) (middle match)  | O(log n)      | O(log n)         | O(log n)         |
+For Binary search:
+If you sort using Quick Sort:
+Quick Sort Time Complexity:
+- Best & Average Case: O(n log n)
+- Worst Case: O(n²) (e.g., already sorted array with poor pivot selection)
+Binary Search Time Complexity: O(log n)
+Total Time Complexity:
+- Best & Average: O(n log n)
+- Worst: O(n²)
 
 ---
 
