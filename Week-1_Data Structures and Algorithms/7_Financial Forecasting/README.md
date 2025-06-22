@@ -9,11 +9,12 @@ The recursive approach simplifies the logic of compound growth over a number of 
 
 Recursion is a technique where a function calls itself untill a base case is reached. It solves a problem by breaking it down into smaller subproblems.  
 It consists of:
-    - A **base case** – the condition under which the recursion stops.
-    - A **recursive case** – where the function calls itself with updated parameters.
+- A **base case** – the condition under which the recursion stops.
+- A **recursive case** – where the function calls itself with updated parameters.
+  
 It is used for:
-    - Simplifiing problems like tree traversal, factorial, Fibonacci series, etc.
-    - Ideal for problems with repetitive structure or subproblems.
+- Simplifiing problems like tree traversal, factorial, Fibonacci series, etc.
+- Ideal for problems with repetitive structure or subproblems.
 ---
 
 ##  Code Structure
