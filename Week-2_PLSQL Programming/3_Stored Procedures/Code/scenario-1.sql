@@ -4,7 +4,7 @@ CREATE OR REPLACE PROCEDURE ProcessMonthlyInterest IS
     v_new_balance NUMBER;
 BEGIN
     FOR acc IN (
-        SELECT AccountID, Balance
+        SELECT AccountID, Balance, customerID
         FROM Accounts
         WHERE AccountType = 'Savings'
     ) LOOP
@@ -15,9 +15,14 @@ BEGIN
         DBMS_OUTPUT.PUT_LINE('New Balance: ' || v_new_balance);
 
         UPDATE Accounts
-        SET Balance = v_new_balance,
-            LastModified = SYSDATE
-        WHERE AccountID = acc.AccountID;
+        SET balance = v_new_balance,
+            lastModified = SYSDATE
+        WHERE accountID = acc.accountID;
+        
+        UPDATE Customers
+        SET balance = v_new_balance,
+        	lastmodified = SYSDATE
+        WHERE customerID = acc.customerID;
     END LOOP;
     COMMIT;
 END;
