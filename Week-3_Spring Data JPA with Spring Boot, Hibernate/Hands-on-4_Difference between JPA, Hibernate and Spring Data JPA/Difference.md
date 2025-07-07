@@ -82,10 +82,10 @@ Spring Data JPA is part of the Spring Data project. It is a Spring-based abstrac
     | Provides Annotations | Yes                       | Yes, inherits from JPA     | Yes, uses JPA annotations   |
     | Requires JPA         | -                         | Yes                        | Yes                         |
     | Boilerplate Code     | More                      | More                       | Low                         |
-    |Can be used alone     |No                         |Yes                         | No(depends on JPA provider) |
+    | Can be used alone    | No                        | Yes                        | No(depends on JPA provider) |
 
 
-## Use cases
+## Conclusion
 - Use JPA if you want to write portable code that works with any JPA provider.
 
 - Use Hibernate if you need advanced features not available in JPA.
