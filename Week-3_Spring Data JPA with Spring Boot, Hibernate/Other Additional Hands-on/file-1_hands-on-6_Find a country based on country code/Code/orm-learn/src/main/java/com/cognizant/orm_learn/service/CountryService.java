@@ -19,8 +19,6 @@ public class CountryService {
         this.countryRepository = countryRepository;
     }
 
-    public CountryService(){}
-
     @Transactional
     public List<Country> getAllCountries(){
         return countryRepository.findAll();

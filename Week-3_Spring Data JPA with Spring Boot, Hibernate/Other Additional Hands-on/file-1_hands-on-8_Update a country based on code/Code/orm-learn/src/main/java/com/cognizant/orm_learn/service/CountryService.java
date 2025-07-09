@@ -28,12 +28,21 @@ public class CountryService {
     public Country findCountryByCode(String countryCode) throws CountryNotFoundException {
         Optional<Country> result = countryRepository.findById(countryCode);
         if(result.isEmpty()) throw new CountryNotFoundException("Country not found!");
-        Country country = result.get();
-        return country;
+        return result.get();
     }
 
     @Transactional
     public void addCountry(Country country){
         countryRepository.save(country);
+    }
+
+    @Transactional
+    public void updateCountry(String code,String name){
+        Optional<Country> result = countryRepository.findById(code);
+        result.ifPresent(c -> {
+            c.setName(name);
+            countryRepository.save(c);
+        });
+
     }
 }
