@@ -1,0 +1,13 @@
+[
+  { "name": "Rohit Sharma", "score": 45, "country": "India" },
+  { "name": "Virat Kohli", "score": 72, "country": "India" },
+  { "name": "Shubman Gill", "score": 30, "country": "India" },
+  { "name": "KL Rahul", "score": 50, "country": "India" },
+  { "name": "Hardik Pandya", "score": 38, "country": "India" },
+  { "name": "Jasprit Bumrah", "score": 8, "country": "India" },
+  { "name": "Steve Smith", "score": 65, "country": "Australia" },
+  { "name": "Joe Root", "score": 58, "country": "England" },
+  { "name": "Kane Williamson", "score": 70, "country": "New Zealand" },
+  { "name": "Babar Azam", "score": 69, "country": "Pakistan" },
+  { "name": "David Warner", "score": 34, "country": "Australia" }
+]
